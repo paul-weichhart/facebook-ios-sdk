@@ -51,7 +51,9 @@ Pod::Spec.new do |s|
     http: "https://github.com/facebook/facebook-ios-sdk/releases/download/v#{s.version}/FacebookSDK_Dynamic.xcframework.zip",
     sha1: '91e2b86b13699319e713f4b1359ca47503cdc316'
   }
-  s.resource_bundles = {'FBSDKShareKit' => ['FBSDKShareKit/FBSDKShareKit/PrivacyInfo.xcprivacy']
+  s.resource_bundles = {
+    'FBSDKShareKit' => ['FBSDKShareKit/FBSDKShareKit/PrivacyInfo.xcprivacy']
+  }
   s.vendored_frameworks = 'XCFrameworks/FBSDKShareKit.xcframework'
   s.dependency 'FBSDKCoreKit', "#{s.version}"
 end
